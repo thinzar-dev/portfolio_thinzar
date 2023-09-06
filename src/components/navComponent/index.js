@@ -9,7 +9,7 @@ function NavCircle() {
         <div className="u-icons">
           <Link to="../skills">Skills</Link>
           <Link to="/experiences">Experiences</Link>
-          <Link to="../Projects">Projects</Link>
+          <Link to="../projects">Projects</Link>
         </div>
         <h2
           style={{

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "./components/navComponent/Navbar";
 import NavCircle from "./components/navComponent";
 import pfphoto from "./images/thinzar_pf.jpg";
+import resume from "./Resume_thinzaroo.pdf";
 
 function AboutMe() {
 
@@ -78,8 +79,8 @@ function AboutMe() {
                 in-house service websites, and implemented the Zoho CRM
                 automation process for subscriptions. I thrive in collaborative
                 team environments by effectively communicating, contributing
-                ideas, and working with designers, and other
-                stakeholders to achieve project goals.{" "}
+                ideas, and working with designers, and other stakeholders to
+                achieve project goals.{" "}
               </p>
             </motion.div>
             <motion.div
@@ -91,8 +92,8 @@ function AboutMe() {
               viewport={{ amount: 0.4 }}
               transition={{ duration: 1.7 }}
             >
-              <a href="/about-me" className="download-resume">
-                See More About Me
+              <a href={resume} target="_blank" className="download-resume">
+                View Resume
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24"
