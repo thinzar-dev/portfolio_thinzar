@@ -1,0 +1,146 @@
+.pj-card {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pj-card-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin-top: -7rem;
+}
+
+.card-grid {
+    padding: 0 4rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+
+.card-grid li {
+    display: inline-block;
+    width: 25rem;
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.card-grid figure {
+    margin: 0;
+    position: relative;
+}
+
+.cs-style-5 figure:hover img, .cs-style-5 figure.cs-hover img {
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+.cs-style-5 figure img {
+    z-index: 10;
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.card-grid figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+
+.cs-style-5 figure:hover figcaption, .cs-style-5 figure.cs-hover figcaption {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.cs-style-5 figcaption {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.card-grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: #457f763d;
+    color: #ed4e6e;
+}
+
+.card-grid figcaption h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.cs-style-5 figure a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.card-grid figcaption a {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #05caacdb;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .card-grid {
+        padding: 0 2rem;
+    }
+    .card-grid li {
+        width: 22rem;
+        padding: 10px;
+    }
+    .card-grid figcaption h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .pj-card {
+        height: 100%;
+    }
+    .pj-card-container {
+        height: 100%;
+        margin-top: 0;
+    }
+    .card-grid {
+        padding: 0 4rem 8rem;
+    }
+    .card-grid li {
+        padding: 20px 10px;
+    }
+}

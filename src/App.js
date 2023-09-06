@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AboutMe from "./AboutMe";
+import Home from "./components/home/index";
+import Skills from "./components/skills";
+import Experience from "./components/experience";
+import Projects from "./components/projects";
+import Certification from "./components/projectDetails/certification";
+import CloneUI from "./components/projectDetails/cloneUI";
+import Portfolio from "./components/projectDetails/portfolio";
+import LearnPractice from "./components/projectDetails/learnPractice";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <Routes>
+          <Route path="/" Component={Home}></Route>
+          <Route path="/about-me" Component={AboutMe}></Route>
+          <Route path="/skills" Component={Skills}></Route>
+          <Route path="experiences" Component={Experience}></Route>
+          <Route path="projects" Component={Projects}></Route>
+          <Route path="/projects/certification" Component={Certification}></Route>
+          <Route path="/projects/clone-ui" Component={CloneUI}></Route>
+          <Route path="/projects/portfolio" Component={Portfolio}></Route>
+          <Route path="/projects/learn-and-practice" Component={LearnPractice}></Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

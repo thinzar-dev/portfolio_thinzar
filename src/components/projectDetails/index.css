@@ -1,0 +1,147 @@
+.pj-details {
+    background: #111827;
+    position: absolute;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.pj-fact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: -7rem;
+    padding: 0 8.5rem;
+}
+
+.header-pj {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.pj-row {
+  display: flex;
+}
+
+.pj-content-col {
+  width: 70%;
+  padding-right: 3rem;
+}
+
+.pj-content-col p {
+    line-height: 1.5;
+}
+
+.pj-content-col a, .code-pkg {
+  color: #5eead4;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.portfolio-tech {
+  color: #5eead4;
+  font-weight: 500;
+}
+
+.pj-tech-col {
+    width: 30%;
+}
+
+.pj-list {
+    padding-left: 1rem;
+    line-height: 1.5;
+}
+
+.tech {
+    margin: 1rem 0;
+}
+
+.tech-stack {
+    font-weight: 600;
+    color: #fff;
+}
+
+span.code--white {
+    display: inline-block;
+    background: rgb(94 234 212 / 30%);
+    padding: 6px 13px;
+    border-radius: 4px;
+    font-size: 11px;
+    margin: 0 6px 10px 0;
+    font-weight: 700;
+}
+
+.original-ui, .clone-ui {
+    color: #5eead4;
+    display: flex;
+    align-items: center;
+    /* margin: 1rem 0; */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.original-ui svg, .clone-ui svg {
+    margin-left: 4px;
+    transition: transform .3s ease-out;
+    transform: rotate(-90deg);
+}
+
+.original-ui:hover svg, .clone-ui:hover svg {
+    transform: rotate(-90deg) translateY(10px);
+}
+
+.original-ui svg path:nth-child(2), .clone-ui svg path:nth-child(2) {
+    fill: #5eead4;
+}
+
+@media (max-width:1024px) {
+    .pj-fact {
+        padding: 0 2rem;
+    }
+    .pj-row {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .pj-content-col {
+        width: 100%;
+        padding-right: 0rem;
+    }
+    .pj-tech-col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .pj-details {
+        height: 100vh;
+        position: relative;
+    }
+    .pj-fact {
+        height: 100%;
+        margin-top: 0;
+        padding: 0 2rem 10rem;
+    }
+    .header-pj {
+        margin-top: -6rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-pj {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+    .pj-details {
+        height: 100%;
+        position: relative;
+    }
+    .pj-fact {
+        padding: 0 1rem 8rem;
+        margin-top: 1rem;
+    }
+    .pj-tech-col {
+        width: 100%;
+    }
+}
