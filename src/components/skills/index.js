@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../navComponent/Navbar";
 import NavCircle from "../navComponent";
 import './index.css';
 import GoToTop from "../../GoToTop";
+import { BottomScrollListener } from "react-bottom-scroll-listener";
 
 function Skills() {
 
@@ -15,17 +16,9 @@ function Skills() {
 
   const [navClass, setNavClass] = useState("nav-circle");
 
-  const handleScroll = () => {
-    if (
-      (0 <=
-        document.documentElement.scrollHeight -
-          document.documentElement.scrollTop -
-          document.documentElement.clientHeight <=
-        1) ||
-      (document.documentElement.clientWidth < 767)
-    ) {
-      setNavClass("show-nav-circle");
-    }
+  const handleOnDocumentBottom = () => {
+    console.log("I am at bottom! " + Math.round(performance.now()));
+    setNavClass("show-nav-circle");
     if (
       1 <
       document.documentElement.scrollHeight -
@@ -35,17 +28,6 @@ function Skills() {
       setNavClass("nav-circle");
     }
   };
-
-  window.addEventListener("scroll", handleScroll);
-
-  useEffect(() => {
-    if (
-      (document.documentElement.scrollHeight === document.documentElement.clientHeight - document.documentElement.scrollTop) &&
-      (document.documentElement.clientWidth < 1024)
-    ) {
-      setNavClass("show-nav-circle");
-    }
-  }, []);
 
   return (
     <div className="section-style">
@@ -201,6 +183,11 @@ function Skills() {
           <NavCircle />
         </div>
       </div>
+      <BottomScrollListener
+        onBottom={handleOnDocumentBottom}
+        triggerOnNoScroll={true}
+        offset={50}
+      />
       <GoToTop />
     </div>
   );

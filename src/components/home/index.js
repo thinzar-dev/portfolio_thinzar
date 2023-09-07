@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../navComponent/Navbar";
 import NavCircle from "../navComponent";
 import "./index.css";
 import GoToTop from "../../GoToTop";
+import { BottomScrollListener } from "react-bottom-scroll-listener";
 
-function Home () {
+function Home() {
+  
+  const [navClass, setNavClass] = useState("nav-circle");
+
+  const handleOnDocumentBottom = () => {
+    console.log("I am at bottom! " + Math.round(performance.now()));
+    setNavClass("show-nav-circle");
+    if (
+      1 <
+      document.documentElement.scrollHeight -
+        document.documentElement.scrollTop -
+        document.documentElement.clientHeight
+    ) {
+      setNavClass("nav-circle");
+    }
+  };
+
   return (
     <div className="container">
       <div className="intro">
@@ -34,10 +51,19 @@ function Home () {
                 </svg>
               </Link>
             </div>
-            <NavCircle />
+            <div className="svg-div">
+              <div className={navClass}>
+                <NavCircle />
+              </div>
+            </div>
           </div>
         </div>
       </main>
+      <BottomScrollListener
+        onBottom={handleOnDocumentBottom}
+        triggerOnNoScroll={true}
+        offset={50}
+      />
       <GoToTop />
     </div>
   );
