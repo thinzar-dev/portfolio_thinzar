@@ -9,7 +9,7 @@ function Navbar() {
   const [copiedText, setCopiedText] = useState("Copy my email address");
 
   const copyText = async () => {
-    await navigator.clipboard.writeText("thinzar.dev@gmail.com");
+    await navigator.clipboard.writeText("thinzar.oo.dev@gmail.com");
     setCopiedText("Copied Successfully!");
   };
 
@@ -35,7 +35,7 @@ function Navbar() {
           <div className="contact-info">
             <button onClick={copyText}>{copiedText}</button>
             <span>or</span>
-            <a href="mailto:thinzar.dev@gmail.com">
+            <a href="mailto:thinzar.oo.dev@gmail.com">
               Open your email default app{" "}
             </a>
           </div>
