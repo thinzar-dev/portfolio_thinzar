@@ -4,6 +4,7 @@ import Navbar from "./components/navComponent/Navbar";
 import NavCircle from "./components/navComponent";
 import pfphoto from "./images/thinzar_pf.jpg";
 import resume from "./Resume_thinzaroo.pdf";
+import GoToTop from "./GoToTop";
 
 function AboutMe() {
 
@@ -92,7 +93,12 @@ function AboutMe() {
               viewport={{ amount: 0.4 }}
               transition={{ duration: 1.7 }}
             >
-              <a href={resume} target="_blank" className="download-resume">
+              <a
+                href={resume}
+                target="_blank"
+                rel="noreferrer"
+                className="download-resume"
+              >
                 View Resume
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,6 +131,7 @@ function AboutMe() {
           <NavCircle />
         </div>
       </div>
+      <GoToTop />
     </div>
   );
 }

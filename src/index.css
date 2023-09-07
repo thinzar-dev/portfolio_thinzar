@@ -147,7 +147,7 @@ p {
     position: fixed;
 }
 
-#user-button:hover .u-icons, #user-button:focus-within .u-icons {
+#user-button:hover .u-icons, #user-button:focus .u-icons, #user-button:focus-within .u-icons {
     width: 300% !important;
     height: 250% !important;
     opacity: 1!important;
@@ -367,15 +367,18 @@ p {
 
 @media (max-width:768px) {
   #user-button {
-        left: 12%;
-    }
+    left: 12%;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .section-style {
     height: 100%;
     position: relative;
   } 
+}
+
+@media (max-width: 500px) {
   .portfolio-nav {
     padding: 1rem 0;
   }

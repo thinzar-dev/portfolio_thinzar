@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "../navComponent/Navbar";
 import NavCircle from "../navComponent";
 import './index.css';
+import GoToTop from "../../GoToTop";
 
 function PjDetails({ title, pjText, pjTech, pjLink }) {
 
@@ -96,6 +97,7 @@ function PjDetails({ title, pjText, pjTech, pjLink }) {
           <NavCircle />
         </div>
       </div>
+      <GoToTop />
     </div>
   );
 };

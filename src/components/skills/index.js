@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "../navComponent/Navbar";
 import NavCircle from "../navComponent";
 import './index.css';
+import GoToTop from "../../GoToTop";
 
 function Skills() {
 
@@ -16,11 +17,12 @@ function Skills() {
 
   const handleScroll = () => {
     if (
-      0 <=
-      document.documentElement.scrollHeight -
-        document.documentElement.scrollTop -
-        document.documentElement.clientHeight <=
-      1
+      (0 <=
+        document.documentElement.scrollHeight -
+          document.documentElement.scrollTop -
+          document.documentElement.clientHeight <=
+        1) ||
+      (document.documentElement.clientWidth < 767)
     ) {
       setNavClass("show-nav-circle");
     }
@@ -39,7 +41,7 @@ function Skills() {
   useEffect(() => {
     if (
       (document.documentElement.scrollHeight === document.documentElement.clientHeight - document.documentElement.scrollTop) &&
-      (document.documentElement.clientWidth > 767)
+      (document.documentElement.clientWidth < 1024)
     ) {
       setNavClass("show-nav-circle");
     }
@@ -199,6 +201,7 @@ function Skills() {
           <NavCircle />
         </div>
       </div>
+      <GoToTop />
     </div>
   );
 }

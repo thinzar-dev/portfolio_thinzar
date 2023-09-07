@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import thinzarLogo from "../../images/tzar_logo.png"
+import GoToTop from "../../GoToTop";
 
 function Navbar() {
 
@@ -40,6 +41,7 @@ function Navbar() {
           </div>
         </div>
       </div>
+      <GoToTop />
     </div>
   );
 }

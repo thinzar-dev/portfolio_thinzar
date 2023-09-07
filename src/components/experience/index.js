@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "../navComponent/Navbar";
 import NavCircle from "../navComponent";
 import "./index.css";
+import GoToTop from "../../GoToTop";
 
 function Experience() {
 
@@ -51,7 +52,7 @@ function Experience() {
   }, []);
 
   return (
-    <div>
+    <div id="experience-style">
       <Navbar />
       <div className="portfolio-timeline">
         <motion.div
@@ -222,9 +223,10 @@ function Experience() {
                 <p>
                   During the university, I acquired knowledge and completed
                   projects. In each academic year, according to learning
-                  subjects, we have accomplished group projects by dividing our tasks. I effectively applied the knowledge and skills
-                  imparted by the educational institution. Here are the
-                  mini-thesis and projects I have done in university life.
+                  subjects, we have accomplished group projects by dividing our
+                  tasks. I effectively applied the knowledge and skills imparted
+                  by the educational institution. Here are the mini-thesis and
+                  projects I have done in university life.
                 </p>
                 <ul>
                   <li>
@@ -250,12 +252,13 @@ function Experience() {
             </div>
           </motion.div>
         </div>
-        <div className="svg-div">
-          <div className={navClass}>
-            <NavCircle />
-          </div>
+      </div>
+      <div className="svg-div">
+        <div className={navClass}>
+          <NavCircle />
         </div>
       </div>
+      <GoToTop />
     </div>
   );
 }

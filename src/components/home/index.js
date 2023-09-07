@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../navComponent/Navbar";
 import NavCircle from "../navComponent";
 import "./index.css";
+import GoToTop from "../../GoToTop";
 
 function Home () {
   return (
@@ -37,6 +38,7 @@ function Home () {
           </div>
         </div>
       </main>
+      <GoToTop />
     </div>
   );
 };

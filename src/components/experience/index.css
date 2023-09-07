@@ -1,11 +1,14 @@
+#experience-style {
+    height: 100%;
+    overflow: hidden;
+}
+
 .portfolio-timeline {
-  display: table-cell;
-  vertical-align: middle;
   max-width: 1140px;
   height: 100%;
   max-width: 100%;
   padding: 5rem;
-  padding-bottom: 8rem;
+  padding-bottom: 7rem;
   padding-top: 1rem;
   margin: 0 auto;
 }
@@ -33,10 +36,15 @@
 
 .timeline-entry {
     position: relative;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     margin-left: 30px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     clear: both;
+}
+
+.timeline-entry:last-child {
+    margin-left: 3rem;
+    margin-bottom: 0;
 }
 
 .timeline-wrapper {
@@ -54,6 +62,12 @@
     box-shadow: 0 0 0 5px #f2f3f7;
     line-height: 40px;
     float: left;
+}
+
+.timeline-icon:last-child {
+    width: 5px;
+    height: 5px;
+    margin-top: -1rem;
 }
 
 .timeline-label {
@@ -110,12 +124,10 @@
 
 @media (max-width: 500px) {
     .portfolio-timeline {
-        padding: 0 1rem 10rem;
-        margin-top: 1rem;
+        padding: 1rem 1rem 7rem;
     }
     .header-timeline {
         font-size: 1.2rem;
-        margin-top: 1rem;
     }
     .timeline-data:before {
         margin-left: 15px;
@@ -126,6 +138,9 @@
     .timeline-icon {
         width: 30px;
         height: 30px;
+    }
+    .timeline-icon:last-child {
+        margin-left: -0.8rem;
     }
     .timeline-label {
         margin-left: 50px;

@@ -8,6 +8,7 @@ import Certification from "./components/projectDetails/certification";
 import CloneUI from "./components/projectDetails/cloneUI";
 import Portfolio from "./components/projectDetails/portfolio";
 import LearnPractice from "./components/projectDetails/learnPractice";
+import GoToTop from "./GoToTop";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/projects/portfolio" Component={Portfolio}></Route>
           <Route path="/projects/learn-and-practice" Component={LearnPractice}></Route>
         </Routes>
+        <GoToTop />
       </div>
     </BrowserRouter>
   );

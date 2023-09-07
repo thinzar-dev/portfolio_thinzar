@@ -7,6 +7,7 @@ import TrelloHomeClone from "../../images/trello-clone-Ui.png";
 import Portfolio from '../../images/portfolio.png';
 import Learn from '../../images/LC1.png'
 import './index.css';
+import GoToTop from '../../GoToTop';
 
 function Projects() {
 
@@ -91,6 +92,7 @@ function Projects() {
           <NavCircle />
         </div>
       </div>
+      <GoToTop />
     </div>
   );
 }

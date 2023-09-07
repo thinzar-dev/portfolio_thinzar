@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import GoToTop from "../../GoToTop";
 
 function NavCircle() {
 
@@ -243,6 +244,7 @@ function NavCircle() {
           ></path>
         </svg>
       </div>
+      <GoToTop />
     </div>
   );
 };
