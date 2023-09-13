@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "./components/navComponent/Navbar";
 import NavCircle from "./components/navComponent";
 import pfphoto from "./images/thinzar_pf.jpg";
-import resume from "./Resume_ThinzarOo.pdf";
+import resumeTz from "./Resume_ThinzarOo.pdf";
 import GoToTop from "./GoToTop";
 import { BottomScrollListener } from "react-bottom-scroll-listener";
 
@@ -78,7 +78,7 @@ function AboutMe() {
               transition={{ duration: 1.7 }}
             >
               <a
-                href={resume}
+                href={resumeTz}
                 target="_blank"
                 rel="noreferrer"
                 className="download-resume"
