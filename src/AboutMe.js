@@ -45,7 +45,7 @@ function AboutMe() {
               transition={{ type: "spring" }}
             >
               Hi ! <br></br>
-              I'm Thinzar Oo <br></br>
+              I'm Thinzar Oo. <br></br>
               <br></br>
             </motion.h1>
             <motion.div

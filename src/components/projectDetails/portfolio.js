@@ -10,11 +10,11 @@ function Portfolio() {
                     </p></br>
                     <p>
                         <span class="portfolio-tech">Animation:</span>
-                        In crafting my portfolio website, I employed a variety of animations to create an engaging user experience. By leveraging technologies like <span class='code-pkg'>CSS animations</span>, JavaScript-based animation library for <span class='code-pkg'>React(Framer motion)</span>, or CSS animation properties like <span class='code-pkg'>keyframes</span>, I added subtle animations to elements. Upon scrolling, elements may fade in or slide into view elegantly, providing a sense of interactivity and professionalism. Hover effects were also utilized to make buttons and interactive components respond delightfully to user interactions, leaving a lasting impression.
+                        In crafting my portfolio website, I employed a variety of animations to create an engaging user experience. By leveraging technologies like <span class='code-pkg'>CSS animations</span>, JavaScript-based animation library for <span class='code-pkg'>React(Framer motion)</span>, or CSS animation properties like <span class='code-pkg'>keyframes</span>, I added subtle animations to elements.
                     </p></br>
                     <p>
                         <span class="portfolio-tech">Responsiveness:</span>
-                        Understanding the importance of catering to users on various devices, I significantly emphasize ensuring that my portfolio website is fully responsive. Applying CSS media queries and flexible design techniques appropriately, the content and components were adjusted dynamically, maintaining readability and usability across all resolutions. 
+                        Responsiveness: Understanding the importance of catering to users on various devices, applying CSS media queries, and flexible design techniques appropriately. 
                     </p></br>
                     <p>  
                         Through this project, I aim to demonstrate my skills, passion, and commitment to excellence in front-end web development, leaving a positive and lasting impression on those who visit my portfolio.

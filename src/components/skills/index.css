@@ -5,7 +5,7 @@
   justify-content: center;
   height: 100%;
   margin-top: -7rem;
-  padding: 0 8.5rem;
+  padding: 0 7rem;
 }
 
 .header-skill {
@@ -51,6 +51,13 @@
 .skills_brands div svg {
   width: 70px;
   height: 70px;
+}
+
+@media (max-width: 1150px) {
+  .skills_brands div svg {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media (max-width: 1024px) {

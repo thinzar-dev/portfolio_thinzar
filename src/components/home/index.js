@@ -36,7 +36,7 @@ function Home() {
               <h1>Thinzar Oo</h1>
               <h2>Front-end Web Developer</h2>
               <Link to="about-me">
-                About Me
+                About Myself
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24"
