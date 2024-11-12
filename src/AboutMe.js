@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from "./components/navComponent/Navbar";
 import NavCircle from "./components/navComponent";
 import pfphoto from "./images/thinzar_pf.jpg";
-import resumeTz from "./FrontendDeveloper_ThinzarOo_Resume.pdf";
+import resumeTz from "./ThinzarOo_FrontendDev_Resume.pdf";
 import GoToTop from "./GoToTop";
 import { BottomScrollListener } from "react-bottom-scroll-listener";
 
